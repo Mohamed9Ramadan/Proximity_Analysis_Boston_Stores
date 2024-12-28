@@ -1,0 +1,40 @@
+Overview
+
+This project involves performing a comprehensive spatial analysis for determining store-customer relationships, distances, and driving times for various stores in Boston. The analysis includes creating Thiessen polygons, calculating Euclidean distances, performing proximity analysis using the Near tool, generating desire lines, and creating service area polygons.
+
+Features
+
+Thiessen Polygons: Create proximity zones using the CreateThiessenPolygons tool.
+
+Proximity Analysis: Determine the closest store to each customer using the Near tool.
+
+Field Calculation: Add and calculate a field for the distance to the nearest store.
+
+Desire Lines: Create desire lines using the XYToLine tool to visualize the connections between customers and their nearest stores.
+
+Distance Surface: Generate a distance surface using the EucDistance tool to visualize the Euclidean distance from stores.
+
+
+Requirements
+
+
+ArcGIS Pro (with ArcPy).
+
+Script Description
+The provided Python script (your_script.py) performs the following tasks:
+
+Set Workspace: Sets the workspace to the specified geodatabase.
+
+Create Thiessen Polygons: Generates Thiessen polygons for the stores.
+
+Proximity Analysis: Uses the Near tool to find the nearest store for each customer and calculates the distance.
+
+Field Calculation: Adds and calculates the DistanceToStore field in the customers feature class.
+
+Desire Lines: Creates desire lines to visualize customer-to-store relationships.
+
+Distance Surface: Creates a Euclidean distance surface from the stores.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
